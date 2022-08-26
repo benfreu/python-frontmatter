@@ -266,7 +266,7 @@ class Post(object):
     """
 
     def __init__(self, content, handler=None, **metadata):
-        self.content = str(content)
+        self.content = u(content)
         self.metadata = metadata
         self.handler = handler
 
